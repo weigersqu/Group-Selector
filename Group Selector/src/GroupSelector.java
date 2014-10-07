@@ -4,10 +4,8 @@ public class GroupSelector
 	{
 	public int numberOfLines;
 	public static int numberOfGroups;
-	ArrayList <Student> roster;
-	public static String firstName;
-	public static String lastName;
-	public static double score;
+	static ArrayList <Student> roster = new ArrayList <Student>();
+	
 	
 //	create Student constructor
 //	firstName,lastName, score
@@ -24,8 +22,17 @@ public class GroupSelector
 	//Collections.sort(gradebook, new ScoreSorter());
 	public static void main(String[] args)
 		{
-		
-
+		Scanner file = new Scanner( new File("classroster.txt"));
+		int numberOfStudents = file.nextInt();
+			{
+	for(int i = 0; i < numberOfStudents; i++)
+		{
+		String firstName = file.next();
+		String lastName = file.next();
+		double score = file.nextDouble();
+		Classr	
 		}
-
+		public static int getNumberOfGroups();
+			}
+		}
 	}
