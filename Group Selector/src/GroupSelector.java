@@ -1,4 +1,5 @@
 import java.util.*;
+import java.util.Scanner;
 import java.io.*;
 public class GroupSelector
 	{
@@ -20,9 +21,11 @@ public class GroupSelector
 //sort by score
 //deal into groups
 	//Collections.sort(gradebook, new ScoreSorter());
-	public static void main(String[] args)
+	//classroster.add(new Student(firstName, lastName, score ));
+	public static void main(String[] args) throws IOException
 		{
-		Scanner file = new Scanner( new File("classroster.txt"));
+		System.out.println("How many groups would you like?");
+		Scanner file = new Scanner(new File ("classroster 2.txt"));
 		int numberOfStudents = file.nextInt();
 			{
 	for(int i = 0; i < numberOfStudents; i++)
@@ -30,9 +33,10 @@ public class GroupSelector
 		String firstName = file.next();
 		String lastName = file.next();
 		double score = file.nextDouble();
-		Classr	
+		roster.add(new Student(firstName, lastName, score ));
 		}
-		public static int getNumberOfGroups();
+		System.out.println(roster);
+	//public static int getNumberOfGroups();
 			}
 		}
 	}
